@@ -1,0 +1,133 @@
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+
+.content {
+    height: 800px;
+    margin-bottom: 10px;
+    
+}
+
+.pic1 {
+    background-image: url("http://4vector.com/i/free-vector-dynamic-brilliant-color-background-02-vector_017212_2.jpg");
+    background-size: 800px
+}
+
+.pic2 {
+    background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBgigbwY_stFiioNZrrUSIu4Z0x5U7XCbgN0hZlfPlIKmBcA_y");
+    background-size: 800px
+}
+
+
+.origin {
+    position: relative;
+    margin: 0 auto;
+}
+
+.fullOrigin {
+    height: 80px;
+    width: 80px;
+    -webkit-transform-origin: 50% 50%;    
+    -moz-transform-origin: 50% 50%;    
+}
+
+.pageOrigin {
+    width: 800px;
+    height: 800px;
+    -webkit-transform-origin: 50% 50% 400px;    
+    -moz-transform-origin: 50% 50% 400px;    
+}
+
+.fullOrigin:hover {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+}
+
+.fullOrigin, .origin, .face, .renderContainer {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -webkit-transform 1s;
+
+}
+
+/* faces */
+.face {
+    position: absolute;
+    background-color: rgba(50, 50, 50, 0.7);
+    width: 80px;
+    height: 80px;
+}
+
+
+/* draw rectangle */
+.one {
+    -webkit-transform: rotateX(90deg) translateZ(40px);
+    -moz-transform: rotateX(90deg) translateZ(40px);
+    background-color: red;
+}
+
+.two {
+    -webkit-transform: translateZ(-40px);
+    -moz-transform: translateZ(-40px);
+    background-color: blue;
+
+}
+
+.three {
+    -webkit-transform: rotateY(90deg) translateZ(-40px);
+    -moz-transform: rotateY(90deg) translateZ(-40px);
+    background-color: green;
+}
+.four {
+    -webkit-transform: translateZ(40px);
+    -moz-transform: translateZ(40px);
+    background-color: yellow;
+}
+.five {
+    -webkit-transform: rotateY(90deg) translateZ(40px);
+    -moz-transform: rotateY(90deg) translateZ(40px);
+    background-color: pink;
+}
+.six {
+    -webkit-transform: rotateX(90deg) translateZ(-40px);
+    -moz-transform: rotateX(90deg) translateZ(-40px);
+    background-color: black;
+}
+
+.primaryPage {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform: translateZ(800px);
+    -moz-transform: translateZ(800px);
+    position: absolute;
+    background-color: darkgray;
+    width: 800px;
+}
+.secondaryPage {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    position: absolute;
+    -webkit-transform: translateX(400px) translateZ(400px) rotateY(90deg);
+    -moz-transform: translateX(400px) translateZ(400px) rotateY(90deg);
+    background-color: gray;
+    width: 800px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+
+li {
+    display: inline-block;
+}
