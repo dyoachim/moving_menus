@@ -1,4 +1,4 @@
-nav {
+ nav {
     position: fixed;
     top: 0;
     right: 0;
@@ -54,7 +54,7 @@ ul {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
 
 }
 

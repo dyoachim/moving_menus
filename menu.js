@@ -30,18 +30,32 @@ $(document).ready(function() {
         console.log('hit');
         yAngle -= 90;
         $('.pageOrigin').css('webkitTransform', "scale(0.8)");
+        $('.pageOrigin').css('-moz-transform', "scale(0.8)");
 
         setTimeout(function() {
             $('.pageOrigin').css('webkitTransform', "scale(0.8) rotateX(" + xAngle + "deg) rotateY(" + yAngle + "deg)");
+            $('.pageOrigin').css('-moz-transform', "scale(0.8) rotateX(" + xAngle + "deg) rotateY(" + yAngle + "deg)");
         }, 1000);
 
         setTimeout(function() {
             $('.pageOrigin').css('webkitTransform', "rotateX(" + xAngle + "deg) rotateY(" + yAngle + "deg)");
+            $('.pageOrigin').css('-moz-transform', "rotateX(" + xAngle + "deg) rotateY(" + yAngle + "deg)");
         }, 2000);
     });
 
     $('.secondaryPage a').on('click', function() {
         yAngle += 90;
-        $('.pageOrigin').css('webkitTransform', "rotateX(" + xAngle + "deg) rotateY(" + yAngle + "deg)");
+        $('.pageOrigin').css('webkitTransform', "scale(0.8) rotateY(-90deg)");
+        $('.pageOrigin').css('-moz-transform', "scale(0.8) rotateY(-90deg)");
+
+        setTimeout(function() {
+            $('.pageOrigin').css('webkitTransform', "scale(0.8) rotateX(" + xAngle + "deg) rotateY(" + yAngle + "deg)");
+            $('.pageOrigin').css('-moz-transform', "scale(0.8) rotateX(" + xAngle + "deg) rotateY(" + yAngle + "deg)");
+        }, 1000);
+
+        setTimeout(function() {
+            $('.pageOrigin').css('webkitTransform', "rotateX(" + xAngle + "deg) rotateY(" + yAngle + "deg)");
+            $('.pageOrigin').css('-moz-transform', "rotateX(" + xAngle + "deg) rotateY(" + yAngle + "deg)");
+        }, 2000);
     });
 });
